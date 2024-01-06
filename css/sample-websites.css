@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    background-image: radial-gradient(black,rgb(20, 20, 20));
+}
+
+.nothing{
+    height: 25vh;
+}
+
+.websites{
+    display: grid;
+    place-items: center;
+    padding-left: 9vw;
+    padding-right: 11vw;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2vh;
+    overflow: hidden;
+    margin-bottom: 3vh;
+}
+
+
+
+.websites img{
+    height: 50vh;
+}
+
+
+.websites a{
+    text-decoration: none;
+}
+
+.personal-website{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.personal-website:hover{
+    transform: scale(105%);
+    transition: all 0.5s ease-in-out;
+}
+
+.ecom:hover{
+    transform: scale(105%);
+    transition: all 0.5s ease-in-out;
+}
+
+.blog:hover{
+    transform: scale(105%);
+    transition: all 0.5s ease-in-out;
+}
+
+.business:hover{
+    transform: scale(105%);
+    transition: all 0.5s ease-in-out;
+}
+
+.ecom{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.blog{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.business{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.websites p{
+    color: white;
+    font-size: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-40%, -40%);
+}
+
+.intro{
+    height: 20vh;
+    display: grid;
+    place-items: center;
+    padding: 5vh;
+}
+
+.intro p{
+    color: white;
+    font-size: 3vh;
+    font-family: fantasy;
+    text-align: center;
+}

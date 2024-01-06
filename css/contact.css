@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-image: radial-gradient(black,rgb(20, 20, 20));
+}
+
+.nothing{
+    height: 25vh;
+}
+
+.disclaimer{
+    display: grid;
+    place-items: center;
+}
+
+.disclaimer p{
+    font-size: 4vh;
+    color: white;
+    font-family: fantasy;
+    padding: 5vh;
+    margin-bottom: 3vh;
+}
+
+.contacts{
+    padding-left: 20vw;
+    padding-right: 20vw;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.contacts p{
+    color: white;
+}
+
+.phone-email{
+    display: grid;
+    place-items: left;
+}
+
+.top{
+    font-size: 5vh;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+.phone{
+    margin-top: 3vh;
+    font-size: 4vh;
+    font-family: sans-serif;
+}
+
+.email{
+    font-size: 4vh;
+    font-family: sans-serif;
+}
+
+.address{
+    display: grid;
+}
+
+.Address{
+    font-size: 5vh;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.name{
+    font-size: 4vh;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.street{
+    font-size: 4vh;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.city-state{
+    font-size: 4vh;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.CV{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 5vh;
+    display: grid;
+    place-items: center;
+}
+
+.CV p{
+    color: white;
+    font-size: 4.05vh;
+    text-align: center;
+    text-justify: distribute;
+}
+
+
+.button{
+    margin-top: 3vh;
+    display: grid;
+    place-items: center;
+
+}
+
+button{
+    height: 7vh;
+    width: 10vw;
+    border: none;
+    border-radius: 5%;
+    transition: 0.3s ease;
+}
+
+button p{
+    font-size: 3vh;
+    font-family: sans-serif;
+}
+
+button:hover{
+    background-color: rgb(255, 27, 194);
+    transition: 0.3s ease;
+}
+
+.check-me-out{
+    display: grid;
+    place-items: center;
+    margin-top: 8vh;
+}
+
+.check-me-out p{
+    font-family: fantasy;
+    font-size: 6vh;
+    color: white;
+}
+
+.social{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social a img{
+    height: 10vh;
+    transition: .3s ease;
+}
+
+.social a img:hover{
+    transform: scale(115%);
+    transition: .3s ease;
+}
+
+

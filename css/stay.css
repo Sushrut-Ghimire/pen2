@@ -1,0 +1,31 @@
+body{
+    background-image: radial-gradient(black,rgb(20, 20, 20));
+}
+
+.container{
+    height: 120vh;
+    display: flex;
+    place-items: center;
+}
+
+.container img{
+    height: 60vh;
+    padding-left: 10vh;
+}
+
+.text{
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.text h1{
+    color: white;
+}
+
+.text p{
+    color: white;
+    font-size: 3vh;
+    text-align: justify;
+    text-justify: distribute;
+    
+}

@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    background-image: url(img/back.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    z-index: 9;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a img{
+    height: 20vh;
+    margin-right: 35vw;
+}
+
+.navbar input{
+    height: 6vh;
+    width: 40vw;
+    border: none;
+    display: flex;
+    padding-left: 10px;
+    border-bottom: 5px solid black;
+    background: none;
+}
+
+::placeholder{
+    color: antiquewhite;
+}
+
+.navbar button{
+    height: 6.7vh;
+    width: 5vh;
+    border: none;
+    background: none;
+    border-bottom: 5px solid black;
+}
+
+.navbar button img{
+    height: 5vh;
+}
+
+.today{
+    display: flex;
+    margin-top: 20vh;
+}
+
+.heading{
+    width: 40vw;
+    padding-left: 5vw;
+}
+
+.topic{
+    font-size: 5vh;
+    font-family: fantasy;
+    color: rgb(0, 255, 234);
+}
+
+.des{
+    font-family: sans-serif;
+    font: 3vh;
+    margin-top: 2vh;
+    color: rgb(255, 255, 255);
+}
+
+.socials{
+    margin-left: 5vw;
+    border-radius: 5%;
+    width: 30vw;
+    padding-left: 2vw;
+    background-color:  rgb(63, 170, 161);
+}
+
+.topic1{
+    font-size: 5vh;
+    font-family: fantasy;
+    color: rgb(0, 0, 0);
+    margin-top: 2vh;
+}
+
+.list ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+.list ul li{
+    padding: 0 8vh;
+    margin-left: -6vh;
+    margin-top: 2vh;
+}
+
+.list ul li a img{
+    height: 6vh;
+    transition: all 0.4s ease;
+    border-radius: 60%;
+}
+
+.list ul li a img:hover{
+    background-color: salmon;
+    border-radius: 60%;
+    background-size: 90%;
+    transition: all 0.4s ease;
+}
+.stories{
+    height: 100vh;
+    background-color:  rgb(63, 170, 161);
+    margin-top: 25vh;
+    padding-top: 3vh;
+}
+
+.container{
+    background-color:  rgb(63, 170, 161);
+}
+
+section{
+    position: relative;
+    margin: 5vh 8vw;
+    transition: 0.5s ease;
+}
+
+.main-container{
+    position: relative;
+}
+
+.tab-menu{
+    color: bisque;
+    list-style: none;
+    background: rgb(42, 42, 42);
+    max-width: 25vw;
+    padding: 2vh;
+    white-space: nowrap;
+    border-bottom: 1px solid rgb(50, 50, 50);
+    border-radius: 50px;
+    box-shadow: 0 5px 25px rgb(2, 2, 2, 0.1);
+    overflow-x: auto;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+.tab-menu::-webkit-scrollbar{
+    display: none;
+}
+
+.tab-nav-bar{
+    position: relative;
+    margin: 6vh 1vh 4vh 1vh;
+}
+
+.tab-navigation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.tab-btn{
+    color: bisque;
+    display: inline-block;
+    font-size: 3vh;
+    font-weight: 400;
+    margin: 0 2px;
+    padding: 1vh 2vh;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.tab-btn:hover{
+    background: black;
+    transition: 0.3s ease;
+}
+
+.tab-btn.active{
+    background-color:  rgb(63, 170, 161)
+}
+
+.left-btn, .right-btn{
+    position: absolute;
+    color: bisque;
+    border-radius: 50%;
+    font-size: 1.8em;
+    padding: 1vh;
+    cursor: pointer;
+}
+
+.left-btn{
+    left: 0px;
+    background: linear-gradient(to left, transparent,  rgb(42, 42, 42) 80% );
+    display: none;
+}
+
+.right-btn{
+    right: 0px;
+    background: linear-gradient(to right, transparent,  rgb(42, 42, 42) 80% );
+}
+
+.tab-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tab{
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    max-width: 60vw;
+    padding: 2vh 4vh;
+    transform: translateX(25px);
+    content-visibility: hidden;
+    opacity: 0;
+
+}
+
+.tab.active{
+    transform: translateX(0);
+    content-visibility: visible;
+    opacity: 1;
+    transition: 0.4s ease;
+}
+
+.tab .row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4.5vh 0;
+    gap: 2.7vh;
+}
+
+.tab .img-card{
+    position: relative;
+    width: 50vh;
+    max-width: 50vh;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 25px rgb(2, 2, 2, 0.5);
+}
+
+.tab .img-card img{
+    width: 100%;
+}
+
+.right-column{
+    max-width: 80vh;
+}
+
+.info .city, .info .description{
+    color: black;
+    margin-bottom: 0.9vh;
+    text-align: justify;
+    text-justify: distribute;
+}
+
+.info .city{
+    font-family: fantasy;
+    font-size: 2em;
+    text-align: justify;
+    text-justify: distribute;
+}
+
+.country{
+    text-align: justify;
+    text-justify: distribute;
+}
+
+footer{
+    background: black;
+}
+
+.About{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+
+.foothead{
+    font-size: 4vh;
+    font-weight: bolder;
+    color:  rgb(63, 170, 161)
+}
+
+.links{
+    display: flex;
+    padding: 5vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img img{
+    height: 40vh;
+}
+
+.quicklinks{
+    display: grid;
+    place-items: center;
+    gap: 2vh;
+}
+.quicklinks p{
+    font-family: fantasy;
+    font-size: 6vh;
+    color:  rgb(63, 170, 161)
+}
+
+.quicklinks ul{
+    list-style: none;
+}
+
+.quicklinks ul li{
+    margin: 0.2vh;
+}
+
+.quicklinks ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color:  rgb(63, 170, 161);
+    opacity: 0.7;
+}
+
+.quicklinks ul li a:hover{
+    opacity: 1;
+}
+
+.copyright{
+    display: grid;
+    place-items: center;
+    padding: 3vh;
+
+}
+
+.copyright p{
+    color: rgb(48, 169, 169);
+    font-size: 3vh;
+}
